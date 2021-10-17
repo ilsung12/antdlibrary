@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DatePicker, message } from 'antd';
+import { DatePicker, message, Alert } from 'antd';
 
 export default function Getstart() {
   const [date, setDate] = useState(null);
@@ -14,6 +14,10 @@ export default function Getstart() {
       <DatePicker onChange={handleChange} />
       <div style={{ marginTop: 16 }}>
         Selected Date: {date ? date.format('YYYY-MM-DD') : 'None'}
+        <Alert
+          message="Selected Date"
+          description={date ? date.format('YYYY-MM-DD') : 'None'}
+        />
       </div>
     </div>
   );
