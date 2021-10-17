@@ -1,5 +1,5 @@
-import React from 'react';
-import Getstart from './Getstart';
+import React from "react";
+import Getstart from "./Getstart";
 
 export default function AntdExample() {
   return (
