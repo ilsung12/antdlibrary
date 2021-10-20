@@ -24,7 +24,8 @@ export default function ModalExample() {
     console.log('Clicked cancel button');
     setVisible(false);
   };
-
+ 
+  
   return (
     <>
       <Progress strokeLinecap="square" percent={75} />
